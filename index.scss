@@ -1,0 +1,110 @@
+$theme-colors: (
+  "primary": #1bbc9d,
+  "danger": blue,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Sarabun:wght@700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+.navbar-brand {
+  img {
+    width: 36px;
+    position: relative;
+    top: 2px;
+    vertical-align: top;
+  }
+  font-weight: 700;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-family: "Sarabun", sans-serif;
+}
+header {
+  background: linear-gradient(to right, #363795, #005c97);
+  color: rgba(255, 255, 255, 0.7);
+  h1 {
+    font-family: "Sarabun", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: #fff;
+  }
+  h2 {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 600;
+    display: block;
+    font-size: 46px;
+    color: #fff;
+  }
+}
+
+.btn {
+  font-size: 14px;
+  border-radius: 2em;
+}
+
+.btn.btn-primary {
+  color: #fff !important;
+}
+
+.btn.btn-outline-secondary {
+  color: #fff;
+  border-color: #fff;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center;
+}
+
+.nav-link {
+  position: relative;
+  &::after {
+    width: 0px;
+    height: 0px;
+    display: block;
+    content: "";
+    margin: 0 auto;
+    background: white;
+    position: relative;
+    bottom: 0;
+  }
+  &:hover {
+    &::after {
+      transition: all 0.1s;
+      width: 20px;
+      height: 3px;
+      display: block;
+      content: "";
+      background: white;
+      position: absolute;
+      bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+  }
+}
+
+.btn .btn-primary {
+}
+
+.about {
+  background-color: #333333;
+
+  a {
+    color: #4d91f5;
+  }
+}
